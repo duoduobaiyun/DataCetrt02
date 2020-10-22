@@ -6,6 +6,7 @@ import (
 	"fmt"
 )
 
+//草稿,请别在意
 func main()  {
 	user1:=models.User{
 		Id: 1,
