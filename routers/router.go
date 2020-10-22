@@ -20,4 +20,8 @@ func init() {
     beego.Router("/user_login",&controllers.LoginController{})
     //文件上传接口
     beego.Router("/upload",&controllers.UploadFileController{})
+    //在认证数据列表页面,点击新增认证按钮,跳转"新增页面"
+    beego.Router("/upload_file.html",&controllers.UploadFileController{})
+    //查看认证数据的证书(cert_detail.html)
+    //beego.Router("/cert_detail.html"&controllers.)
 }

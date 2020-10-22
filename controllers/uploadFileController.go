@@ -2,13 +2,11 @@ package controllers
 
 import (
 	"DataCertProject_Me/models"
+	"DataCertProject_Me/util"
 	"bufio"
-	"crypto/md5"
-	"encoding/hex"
 	"fmt"
 	"github.com/astaxie/beego"
 	"io"
-	"io/ioutil"
 	"os"
 	"time"
 )
@@ -18,6 +16,14 @@ import (
  */
 type UploadFileController struct {
 	beego.Controller
+}
+
+//跳转到新增认证文件的页面upload_file.html
+func (u  *UploadFileController)Get()  {
+	phone:=u.GetString("phone")
+	fmt.Println("用户phone的信息",phone)
+	u.Data["Phone"]=phone
+	u.TplName="home.html"
 }
 
 /*
@@ -62,15 +68,20 @@ func (u *UploadFileController) Post() {
 		u.Ctx.WriteString("抱歉,保存电子数据失败,请重试!")
 		return
 	}
+	defer saveFile.Close()
     fmt.Println("拷贝文件的大小是:",file_size)
 
 	//2.计算文件的hash
-	fmt.Println(file)
-	md5Hash:=md5.New()
-	fileBytes,_:= ioutil.ReadAll(file)
-	md5Hash.Write(fileBytes)
-	hashBytes:=md5Hash.Sum(nil)
-	hash:=hex.EncodeToString(hashBytes)
+	//fmt.Println("要计算文件的大小是:",saveFile)
+	hashFile,err:=os.Open(uploadDir)
+	defer hashFile.Close()
+	hash,err:=util.MD5HashReader(hashFile)
+
+	//md5Hash:=md5.New()
+	//fileBytes,_:= ioutil.ReadAll(file)
+	//md5Hash.Write(fileBytes)
+	//hashBytes:=md5Hash.Sum(nil)
+	//hash:=hex.EncodeToString(hashBytes)
 
 	//3.将上传的记录保存到数据库中
 	record:=models.UploadRecord{}
@@ -82,6 +93,7 @@ func (u *UploadFileController) Post() {
 	record.Phone=phone//手机
 	_,err=record.SaveRecord()
 	if err != nil {
+		fmt.Println(err.Error())
 		u.Ctx.WriteString("抱歉,数据认证错误,请重试")
 		return
 	}
@@ -90,6 +102,7 @@ func (u *UploadFileController) Post() {
 
     //5.根据文件保存结果,返回相应的提示信息或者页面跳转
 	if err != nil {
+		fmt.Println(err.Error())
 		u.Ctx.WriteString("获取认证数据失败,请重试!")
 		return
 	}
@@ -98,5 +111,5 @@ func (u *UploadFileController) Post() {
     u.Data["Phone"]=phone
 	u.TplName="list_record.html"
 	//4.根据文件保存结果,返回相应的提示信息或者页面跳转
-	u.Ctx.WriteString("获取到上传文件")
+	//u.Ctx.WriteString("获取到上传文件")
 }

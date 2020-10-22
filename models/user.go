@@ -4,6 +4,7 @@ import (
 	"DataCertProject_Me/db_mysql"
 	"DataCertProject_Me/util"
 	"database/sql"
+	"fmt"
 )
 
 type User struct {
@@ -26,10 +27,12 @@ func (u User)SaveUser()(int64,error)  {
 	row,err:=db_mysql.Db.Exec("insert  into user(phone,password)" +
 		"values(?,?)",u.Phone,u.Password)
 	if err!=nil {
+		fmt.Println(err.Error())
 		return -1,err
 	}
 	id,err:=row.RowsAffected()
 	if err != nil {
+		fmt.Println(err.Error())
 		return -1,err
 	}
 	return id,nil
@@ -45,6 +48,7 @@ func (u User) QueryUser()(*User,error)  {
 		u.Phone,u.Password)
 	err:=row.Scan(&u.Phone)
 	if err != nil {
+		fmt.Println(err.Error())
 		return nil, err
 	}
 	return &u,nil

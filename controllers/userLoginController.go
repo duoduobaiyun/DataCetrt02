@@ -26,6 +26,7 @@ func (l *LoginController) Post() {
 	var user models.User
 	err:=l.ParseForm(&user)
 	if err != nil {
+		fmt.Println(err.Error())
 		l.Ctx.WriteString("抱歉,用户信息解析失败,请重试!")
 		return
 	}
