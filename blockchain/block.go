@@ -15,9 +15,17 @@ type Block struct {
 	Hash      []byte //区块的hash
 	Data      []byte //数据
 	PreHash   []byte //上一个区块的hash
-	Version   string //上一个区块的hash
+	Version   string //版本
 	Nonce     int64  //随机数,用于pow工作量证明算法计算
 }
+
+
+//生成创世区块,返回区块信息
+func CreatGenesisBlock() Block {
+	block:=NewBlock(0,[]byte{},[]byte{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0})
+	return block
+}
+
 
 //新建一个区块实例,并返回该区块
 func NewBlock(height int64, data []byte, prevHash []byte) Block {

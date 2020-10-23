@@ -8,7 +8,7 @@ import (
 	"math/big"
 )
 
-const  DIFFFICULTY =20
+const  DIFFFICULTY =19
 
 
 //工作量证明结构体
@@ -62,14 +62,14 @@ func (p ProofOfWork)Run() ([]byte,int64) {
         sha256Hash := sha256.New()
         sha256Hash.Write(blockBytes)
 		block256hash = sha256Hash.Sum(nil)
-		fmt.Println("block256Hash:",block256hash)
+		//fmt.Println("block256Hash:",block256hash)
 
 
 		//fmt.Println("挖矿中,当前尝试nonce值:\n",nonce)
         //sha256hash(区块+nonce值) 对应的大整数
         bigBlock=bigBlock.SetBytes(block256hash)
-        //fmt.Printf("目标值:%x\n",p.Target)
-        ///fmt.Printf("Hash值:%x\n",bigBlock)
+        fmt.Printf("目标值:%x\n",p.Target)
+        fmt.Printf("Hash值:%x\n",bigBlock)
 		if p.Target.Cmp(bigBlock) ==1 {//如果满足条件,退出循环
 			break
 		}

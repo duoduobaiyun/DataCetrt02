@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d50ea7e-83d2-4d2e-bd59-287f682f8185" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cn_密码学算法/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BigIntCode/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/BigIntCode/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoltDBDemo/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/BoltDBDemo/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/block.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/pow.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en_un/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/en_un/json.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en_un/xml.go" beforeDir="false" afterPath="$PROJECT_DIR$/en_un/xml.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DataCertProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -61,7 +60,7 @@
       <recent name="D:\Project\GOProjects\src\DataCertProject_Me\static\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build DataCertProject_Me">
+  <component name="RunManager" selected="Go 构建.go build main.go">
     <configuration name="go build DataCertProject_Me" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="DataCertProject_Me" />
       <working_directory value="$PROJECT_DIR$" />
@@ -80,20 +79,20 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build DataCertProject_Me/en_un" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build DataCertProject_Me/cn_密码学算法" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="DataCertProject_Me" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/en_un/xml.go" />
-      <package value="DataCertProject_Me/en_un" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/cn_密码学算法/main.go" />
+      <package value="DataCertProject_Me/cn_密码学算法" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build json.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="DataCertProject_Me" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/en_un/json.go" />
+      <filePath value="$PROJECT_DIR$/cn_密码学算法/main.go" />
       <package value="DataCertProject_Me" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
@@ -109,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build main.go" />
+        <item itemvalue="Go 构建.go build DataCertProject_Me/cn_密码学算法" />
         <item itemvalue="Go 构建.go build DataCertProject_Me" />
         <item itemvalue="Go 构建.go build DataCertProject_Me/BoltDBDemo" />
         <item itemvalue="Go 构建.go build pow.go" />
-        <item itemvalue="Go 构建.go build DataCertProject_Me/en_un" />
-        <item itemvalue="Go 构建.go build json.go" />
       </list>
     </recent_temporary>
   </component>
@@ -133,22 +132,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603362790153" />
-    <state width="1493" height="201" key="GridCell.Tab.0.bottom" timestamp="1603374374096">
+    <state width="990" height="353" key="GridCell.Tab.0.bottom" timestamp="1603460580247">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603374374096" />
-    <state width="1493" height="201" key="GridCell.Tab.0.center" timestamp="1603374374095">
+    <state width="990" height="353" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603460580247" />
+    <state width="990" height="353" key="GridCell.Tab.0.center" timestamp="1603460580246">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603374374095" />
-    <state width="1493" height="201" key="GridCell.Tab.0.left" timestamp="1603374374093">
+    <state width="990" height="353" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603460580246" />
+    <state width="990" height="353" key="GridCell.Tab.0.left" timestamp="1603460580246">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603374374093" />
-    <state width="1493" height="201" key="GridCell.Tab.0.right" timestamp="1603374374096">
+    <state width="990" height="353" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603460580246" />
+    <state width="990" height="353" key="GridCell.Tab.0.right" timestamp="1603460580246">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603374374095" />
+    <state width="990" height="353" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603460580246" />
     <state x="270" y="77" key="SettingsEditor" timestamp="1603366080019">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

@@ -8,18 +8,14 @@ import (
 	"github.com/astaxie/beego"
 )
 
+var BUCKET_NAME ="blocks"
 func main() {
-
-
 	//生成第一区块
-    block:=blockchain.NewBlock(0,[]byte{},[]byte{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0})
+    block:=blockchain.CreatGenesisBlock()
     ///fmt.Println(block)
     fmt.Printf("区块的Hash值:%x\n", block.Hash)
-	fmt.Printf("区块的Hash的长度:%x\n", len(block.Hash))
+	fmt.Println("区块的Hash的长度:", len(block.Hash))
 	fmt.Printf("区块的Nonce值:%d\n",block.Nonce)
-	return
-
-
 
 
 
