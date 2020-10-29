@@ -10,14 +10,17 @@ import (
 
 var BUCKET_NAME ="blocks"
 func main() {
-	//生成第一区块
-    block:=blockchain.CreatGenesisBlock()
-    ///fmt.Println(block)
-    fmt.Printf("区块的Hash值:%x\n", block.Hash)
-	fmt.Println("区块的Hash的长度:", len(block.Hash))
-	fmt.Printf("区块的Nonce值:%d\n",block.Nonce)
-
-
+	//1、实例化一个区块链实例
+	bc := blockchain.NewBlockChain()
+	fmt.Printf("创世区块的Hash值:%x\n", bc.LastHash)
+	block, err := bc.SaveData([]byte("这里存储上链的数据信息"))
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
+	fmt.Printf("区块的高度:%d\n", block.Height)
+	fmt.Printf("区块的PrevHash:%x\n", block.Hash)
+	return
 
 
 	//1.链接数据库

@@ -4,7 +4,6 @@ import (
 	"DataCertProject_Me/util"
 	"bytes"
 	"crypto/sha256"
-	"fmt"
 	"math/big"
 )
 
@@ -68,8 +67,8 @@ func (p ProofOfWork)Run() ([]byte,int64) {
 		//fmt.Println("挖矿中,当前尝试nonce值:\n",nonce)
         //sha256hash(区块+nonce值) 对应的大整数
         bigBlock=bigBlock.SetBytes(block256hash)
-        fmt.Printf("目标值:%x\n",p.Target)
-        fmt.Printf("Hash值:%x\n",bigBlock)
+        //fmt.Printf("目标值:%x\n",p.Target)
+        //fmt.Printf("Hash值:%x\n",bigBlock)
 		if p.Target.Cmp(bigBlock) ==1 {//如果满足条件,退出循环
 			break
 		}

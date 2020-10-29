@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d50ea7e-83d2-4d2e-bd59-287f682f8185" name="默认的" comment="" />
+    <list default="true" id="8d50ea7e-83d2-4d2e-bd59-287f682f8185" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/chain.db.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/blockChain.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/pow.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chain.db" beforeDir="false" afterPath="$PROJECT_DIR$/chain.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,11 +30,15 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1j96iLuZoem9ZexPEW529vezTUM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -112,34 +123,37 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="617" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603253076675">
+    <state x="617" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603870159612">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="617" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1603253076675" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1603362790153">
+    <state x="617" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1603870159612" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1603797178963">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603362790153" />
-    <state width="1493" height="114" key="GridCell.Tab.0.bottom" timestamp="1603465116162">
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603797178963" />
+    <state width="1493" height="389" key="GridCell.Tab.0.bottom" timestamp="1603869693237">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="114" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603465116162" />
-    <state width="1493" height="114" key="GridCell.Tab.0.center" timestamp="1603465116162">
+    <state width="1493" height="389" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603869693237" />
+    <state width="1493" height="389" key="GridCell.Tab.0.center" timestamp="1603869693237">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="114" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603465116162" />
-    <state width="1493" height="114" key="GridCell.Tab.0.left" timestamp="1603465116161">
+    <state width="1493" height="389" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603869693237" />
+    <state width="1493" height="389" key="GridCell.Tab.0.left" timestamp="1603869693237">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="114" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603465116161" />
-    <state width="1493" height="114" key="GridCell.Tab.0.right" timestamp="1603465116162">
+    <state width="1493" height="389" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603869693237" />
+    <state width="1493" height="389" key="GridCell.Tab.0.right" timestamp="1603869693237">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="114" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603465116162" />
+    <state width="1493" height="389" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603869693237" />
     <state x="270" y="77" key="SettingsEditor" timestamp="1603366080019">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
